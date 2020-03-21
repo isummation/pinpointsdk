@@ -1,0 +1,37 @@
+{
+    "name":"Amazon Pinpoint SDK",
+    "version":"4.6.0",
+    "slug":"pinpintsdk",
+    "author":"iSummation Technologies Pvt. Ltd",
+    "homepage":"https://github.com/isummation/pinpintsdk",
+    "documentation":"https://github.com/isummation/pinpintsdk",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/isummation/pinpintsdk"
+    },
+    "bugs":"https://github.com/isummation/pinpintsdk/issues",
+    "shortDescription":"This SDK will provide you with Amazon Pinpoint connectivity for any ColdFusion (CFML) application.",
+    "type":"modules",
+    "license":[
+        {
+            "type":"Apache2",
+            "URL":"http://www.apache.org/licenses/LICENSE-2.0"
+        }
+    ],
+    "contributors":[
+        "Pritesh Patel"
+    ],
+    "dependencies":{},
+    "devDependencies":{},
+    "installPaths":{},
+    "ignore":[
+        "**/.*",
+        "test-harness",
+        "*/.md"
+    ],
+    "scripts":{
+        "toMaster":"recipe build/toMaster.boxr",
+        "format":"cfformat run models/**/*.cfc,test-harness/tests/**/*.cfc,*.cfc --overwrite",
+        "format:check":"cfformat check models/**/*.cfc,test-harness/tests/**/*.cfc,*.cfc"
+    }
+}
