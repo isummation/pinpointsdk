@@ -1,15 +1,15 @@
 {
     "name":"Amazon Pinpoint SDK",
     "version":"4.6.0",
-    "slug":"pinpintsdk",
+    "slug":"pinpointsdk",
     "author":"iSummation Technologies Pvt. Ltd",
-    "homepage":"https://github.com/isummation/pinpintsdk",
-    "documentation":"https://github.com/isummation/pinpintsdk",
+    "homepage":"https://github.com/isummation/pinpointsdk",
+    "documentation":"https://github.com/isummation/pinpointsdk",
     "repository":{
         "type":"git",
-        "URL":"https://github.com/isummation/pinpintsdk"
+        "URL":"https://github.com/isummation/pinpointsdk"
     },
-    "bugs":"https://github.com/isummation/pinpintsdk/issues",
+    "bugs":"https://github.com/isummation/pinpointsdk/issues",
     "shortDescription":"This SDK will provide you with Amazon Pinpoint connectivity for any ColdFusion (CFML) application.",
     "type":"modules",
     "license":[
