@@ -184,7 +184,7 @@ component accessors="true" singleton {
      * Make a request to Amazon Pinpoint.
      *
      * @method     The HTTP method for the request.
-     * @appId      The Application id of Amazon Pinpoint service.
+     * @resource   AWS API resource.
      * @body       The body content of the request, if passed.
      * @headers    A struct of HTTP headers to send.
      * @amzHeaders A struct of special Amazon headers to send.
@@ -210,9 +210,7 @@ component accessors="true" singleton {
             "message"        = "",
             "responseheader" = {}
         };
-        var HTTPResults = "";
-        var param       = "";
-        var md5         = "";
+        var httpResults = "";
 		var sortedAMZ   = listToArray( listSort( structKeyList( arguments.amzHeaders ), "textnocase" ) );
 
         // Default Content Type
@@ -245,7 +243,7 @@ component accessors="true" singleton {
             method = arguments.method,
             url = "#variables.URLEndPoint#/#arguments.resource#",
             charset = "utf-8",
-			result = "HTTPResults",
+			result = "httpResults",
 			redirect = true,
 			timeout = arguments.timeout,
 			useragent = "ColdFusion-PinPointSDK"

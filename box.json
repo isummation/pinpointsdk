@@ -5,6 +5,7 @@
     "author":"iSummation Technologies Pvt. Ltd",
     "homepage":"https://github.com/isummation/pinpointsdk",
     "documentation":"https://github.com/isummation/pinpointsdk",
+    "location":"https://github.com/isummation/pinpointsdk/releases/download/v0.1/pinpointsdk.zip",
     "repository":{
         "type":"git",
         "URL":"https://github.com/isummation/pinpointsdk"
