@@ -125,6 +125,30 @@ component accessors="true" singleton {
 	}
 
 	/**
+	 * Get phone information.
+	 *
+	 * @phoneNumber The phone number to retrieve information about. The phone number that you provide should include a valid numeric country code. Otherwise, the operation might result in an error.
+	 * @countryCode The two-character code, in ISO 3166-1 alpha-2 format, for the country or region where the phone number was originally registered. 
+	 * 
+	 * @return The Pinpoint api response.
+	 */
+	any function validatePhone(
+		required string phoneNumber,
+		required string countryCode
+	){
+		var msgbody = {
+			"PhoneNumber" : arguments.phoneNumber,
+			"IsoCountryCode": arguments.countryCode			
+		};
+
+		var response = pinpointRequest(
+			method   = "POST",
+			resource = "/v1/phone/number/validate",
+			body     = serializeJSON( msgbody )
+		);
+		return response;
+	}
+	/**
 	 * Send SMS to set of mobile#s.
 	 * Alters the internal URL endpoint accordingly.
 	 *
@@ -136,7 +160,7 @@ component accessors="true" singleton {
 	 * @senderId    The sender ID to display as the sender of the message on a recipient's device
 	 * @messageType The SMS message type. Valid values are: TRANSACTIONAL,PROMOTIONAL
 	 * @keyword     The SMS program name that you provided to AWS Support when you requested your dedicated number.
-	 * @return The AmazonPinpoint instance.
+	 * @return The Pinpoint api response.
 	 */
 	any function sendTextMessage(
 		required string appId,
@@ -179,6 +203,7 @@ component accessors="true" singleton {
 		);
 		return response;
 	}
+	
 	/**
 	 * Make a request to Amazon Pinpoint.
 	 *
