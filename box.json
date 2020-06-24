@@ -1,38 +1,32 @@
 {
-    "name":"Amazon Pinpoint SDK",
-    "version":"0.2.0",
-    "slug":"pinpointsdk",
-    "author":"iSummation Technologies Pvt. Ltd",
-    "homepage":"https://github.com/isummation/pinpointsdk",
-    "documentation":"https://github.com/isummation/pinpointsdk",
-    "location":"https://github.com/isummation/pinpointsdk/releases/download/v0.2.0/pinpointsdk.zip",
-    "repository":{
-        "type":"git",
-        "URL":"https://github.com/isummation/pinpointsdk"
-    },
-    "bugs":"https://github.com/isummation/pinpointsdk/issues",
-    "shortDescription":"This SDK will provide you with Amazon Pinpoint connectivity for any ColdFusion (CFML) application.",
-    "type":"modules",
-    "license":[
-        {
-            "type":"Apache2",
-            "URL":"http://www.apache.org/licenses/LICENSE-2.0"
-        }
-    ],
-    "contributors":[
-        "Pritesh Patel"
-    ],
-    "dependencies":{},
-    "devDependencies":{},
-    "installPaths":{},
-    "ignore":[
-        "**/.*",
-        "test-harness",
-        "*/.md"
-    ],
-    "scripts":{
-        "toMaster":"recipe build/toMaster.boxr",
-        "format":"cfformat run models/**/*.cfc,test-harness/tests/**/*.cfc,*.cfc --overwrite",
-        "format:check":"cfformat check models/**/*.cfc,test-harness/tests/**/*.cfc,*.cfc"
-    }
+	"name": "Amazon Pinpoint SDK",
+	"version": "0.2.1",
+	"slug": "pinpointsdk",
+	"author": "iSummation Technologies Pvt. Ltd",
+	"homepage": "https://github.com/isummation/pinpointsdk",
+	"documentation": "https://github.com/isummation/pinpointsdk",
+	"location": "https://github.com/isummation/pinpointsdk/releases/download/v0.2.0/pinpointsdk.zip",
+	"repository": {
+		"type": "git",
+		"URL": "https://github.com/isummation/pinpointsdk"
+	},
+	"bugs": "https://github.com/isummation/pinpointsdk/issues",
+	"shortDescription": "This SDK will provide you with Amazon Pinpoint connectivity for any ColdFusion (CFML) application.",
+	"type": "modules",
+	"license": [
+		{
+			"type": "Apache2",
+			"URL": "http://www.apache.org/licenses/LICENSE-2.0"
+		}
+	],
+	"contributors": ["Pritesh Patel"],
+	"dependencies": {},
+	"devDependencies": {},
+	"installPaths": {},
+	"ignore": ["**/.*", "test-harness", "*/.md"],
+	"scripts": {
+		"toMaster": "recipe build/toMaster.boxr",
+		"format": "cfformat run models/**/*.cfc,test-harness/tests/**/*.cfc,*.cfc --overwrite",
+		"format:check": "cfformat check models/**/*.cfc,test-harness/tests/**/*.cfc,*.cfc"
+	}
 }
