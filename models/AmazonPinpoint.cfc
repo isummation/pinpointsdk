@@ -164,9 +164,9 @@ component accessors="true" singleton {
 	 */
 	any function sendTextMessage(
 		required string appId,
-		required string sender,
 		required array receivers,
 		required string body,
+		string sender,
 		string traceId,
 		string senderId,
 		string messageType = "TRANSACTIONAL",
